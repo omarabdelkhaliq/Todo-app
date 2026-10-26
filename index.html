@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="todo-app">
+        <div class="header">
+          <div class="logo">
+            <h1>TODO</h1>
+          </div>
+          <div class="theme">
+            <div class="moon">
+              <img src="img/icon-moon.svg" alt="moon img" />
+            </div>
+            <div class="sun">
+              <img src="img/icon-sun.svg" alt="sun img" />
+            </div>
+          </div>
+        </div>
+        <div class="input">
+          <span class="circle"></span>
+          <input type="text" id="todoInput" placeholder="Create a new todo..." />
+        </div>
+        <div class="todo">
+          <div class="lists" id="todoLists">
+          </div>
+          <div class="info">
+            <div class="item-left">
+              <p><span id="itemLeft">1</span> items left</p>
+            </div>
+            <div class="buttons">
+              <div class="all">
+                <button id="all" data-filter="all" class="active">All</button>
+              </div>
+              <div class="now">
+                <button id="active" data-filter="active">Active</button>
+              </div>
+              <div class="complete">
+                <button id="complete" data-filter="completed">Completed</button>
+              </div>
+            </div>
+            <div class="clear">
+              <button id="clear">Clear Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>Drag and drop to reorder list</p>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

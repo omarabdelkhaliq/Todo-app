@@ -1,0 +1,8 @@
+<label class="custom-checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <p>finsh js</p>
+              <button class="delete">
+                <img src="img/icon-cross.svg" alt="delete img" />
+              </button>
